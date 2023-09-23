@@ -34,15 +34,14 @@ int eliminar(){
     aux = cab;
     cout<<" Buscando ..."<<opc<<endl;
     while((band==0)&&(aux!=NULL)) {
-        cout<<aux->id<<".. Procesando ..."<<endl;
+        cout<<".. Procesando Id..."<<aux->id<<endl;
         if(aux->id == opc){
             band = 1; // Representa que ya lo encontro            
         } else {
             aux = aux->sig;
         }
     }
-    if(aux!=NULL){
-        cout<<"UPssss!!!"<<endl;
+    if(aux!=NULL){       
         aux2 = cab;
         while(aux2->sig!=aux){
             aux2 = aux2->sig;
